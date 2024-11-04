@@ -166,6 +166,206 @@
              align-items: center;
              gap: 20px;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+
+  
+    /* Media Queries */
+    .navbar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbarul {
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        padding-right: 10px;
+    }
+
+    .navbarul a {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+    }
+    
+    /* Extra Small Devices (Portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+        .navbar {
+            padding: 10px;
+        }
+
+        /* Hide navbar links and show icon for mobile menu */
+        .navbarul {
+            display: none;
+        }
+
+        .navbar::before {
+            content: '☰'; /* Placeholder icon for mobile menu */
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .main{
+            flex-direction: column;
+        }
+        .parag,.parag2{
+            flex-direction: column;
+            width: fit-content;
+            margin-left:0px ;
+
+        }
+        .pg5{
+            width: 280px;
+        }
+        .line{
+            height: 2px;;
+            width: 100%;
+        }
+
+        /* Center main text */
+        .p1, .p2 {
+            font-size: 24px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .bttn {
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        /* Stack logo images */
+        .logo {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .footerinfo,.footernav{
+            flex-direction: column;
+        }
+    }
+
+    /* Small Devices (Landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .navbarul {
+            display: none;
+        }
+
+        .navbar::before {
+            content: '☰'; /* Placeholder icon for mobile menu */
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        /* Stack items in main section */
+        .main {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .p1, .p2 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .bttn {
+            width: 100%;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .logo {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    /* Medium Devices (Tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .navbarul {
+            display: flex;
+            gap: 15px;
+        }
+
+        .p1 {
+            font-size: 40px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .p2 {
+            font-size: 20px;
+            width: 80%;
+            text-align: center;
+        }
+
+        .bttn {
+            padding: 15px 30px;
+            font-size: 15px;
+        }
+
+        .logo {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+
+    /* Large Devices (Desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .navbar {
+            justify-content: space-between;
+        }
+
+        .navbarul {
+            display: flex;
+            gap: 30px;
+        }
+
+        .p1 {
+            font-size: 60px;
+        }
+
+        .p2 {
+            font-size: 26px;
+        }
+
+        .logo {
+            justify-content: space-between;
+        }
+    }
+
+    /* Extra Large Devices (Large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        .navbar {
+            padding: 20px;
+        }
+    }
+</style>
+
         
     </style>
 </head>
